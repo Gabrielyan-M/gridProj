@@ -1,0 +1,334 @@
+@import "./root-styles.scss";
+
+
+@media screen and (max-width: 1260px) {
+    .welcome-section-block__container {
+        > img {
+            position: absolute;
+            top: -12.89vh;
+            right: -20.96vw;
+        }
+    } 
+}
+
+@media screen and (max-width: 1200px) {
+
+    .top-bar__container {
+        padding: 8px 16px;
+    }
+
+    .main-bar__container {
+        padding: 0px 2.78vw 16px;
+    }
+
+    .grid-block {
+        align-items: center;
+        grid-template-columns: min-content 7.01vw 40vw 110px 9.44vw 48px 48px 48px;
+        
+        &__logo-block {
+            margin-right: 1.5vw;
+            grid-row: 1 / 2;
+        }
+    }
+
+    .nav-menu-pointing {
+        display: none;
+    }
+
+
+    .welcome-section-block__container {
+        .welcome-text-block {
+            width: 60%;
+            height: 100%;
+        }
+    } 
+    
+
+    .welcome-section-block__container > img {
+        position: absolute;
+        top: 0vw;
+        right: -14.96vw;
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 999px) {
+    
+    .top-bar {
+        &__container {
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+
+        ul {
+            // change lang & location & telephone number
+            &:nth-child(1) {
+                @include display-flex-settings (flex, row, space-between, center);
+                width: 100%;
+                gap: 0px;
+                li {
+                    // change-languge
+                    &:nth-child(1) {
+                        display: flex;
+
+                        &::after {
+                            left: 52px;
+                        }
+                        
+                    }
+                    
+                    &:nth-child(2) {
+                        display: none;
+                    }
+                }
+            }
+    
+            // working hours
+            &:nth-child(2) {
+                display: none;
+            }
+
+            // addition info
+            &:nth-child(3) {
+                display: none;
+            }
+        }
+    }
+
+    .main-bar__container {
+        .catalog-button {
+            width: 100%;
+        }
+
+        .social-network-block {
+           display: none;
+       }
+    }
+    .change-languge {
+        display: none;
+    }
+
+    .burger-menu__container {
+        .menu-block {
+            .social-network-block {
+                display: flex;
+            }
+        }
+    }
+    
+    .grid-block {
+        grid-template-columns: min-content 80px  55vw  48px 48px 48px;
+
+        &__logo-block {
+            margin-right: 0vw;
+        }
+        
+        &__catalog-button {
+            grid-column: 2 / 3;
+        }
+    
+        &__search-block {
+            grid-column: 3 / 4;
+        }
+
+        &__favourites-button {
+            grid-column: 4 / 5;
+        }
+    
+        &__hunter-button {
+            grid-column: 5 / 6;
+        }
+    
+        &__chest-button {
+            grid-column: 6 / 7;
+        }
+    
+    }
+
+
+    #welcome-section {
+        height: 504px;
+    }
+
+    .welcome-section-block__container {
+        .welcome-text-block {
+            width: 70%;
+            z-index: 2;
+        }
+    }
+
+    .welcome-section-block__container {
+        > img {
+            top: unset;
+            bottom: -11vw;
+            right: -30vw;
+            width: 60%;
+            z-index: 1;
+        }
+    } 
+    
+    
+}
+
+
+@media screen and (max-width: 805px) {
+
+    .main-bar__container {
+        .catalog-button {
+            width: 48px;
+        }
+    }
+    
+    .grid-block {
+        position: relative;
+        grid-template-columns: 48px 48px 65% 48px 48px;
+        row-gap: 18px;
+
+        &__logo-block {
+            // position: absolute;
+            grid-column: 3 / 4;
+        }
+        
+        &__catalog-button {
+            grid-column: 1 / 2;
+        }
+    
+        &__search-block {
+            grid-row: 2 / 3;
+            grid-column: 1 / 6;
+        }
+
+        &__favourites-button {
+            grid-column: 4 / 5;
+        }
+    
+        &__hunter-button {
+            grid-row: 1 / 2;
+    
+            grid-column: 2 / 3;
+        }
+    
+        &__chest-button {
+            grid-row: 1 / 2;
+    
+            grid-column: 5 / 6;
+        }
+    
+    }
+
+
+    
+    
+}
+
+@media screen and (max-width: 635px) {
+    
+    .grid-block {
+        position: relative;
+        grid-template-columns: 48px 48px 60% 48px 48px;
+        row-gap: 18px;
+    }   
+
+    .welcome-section-block__container {
+
+        padding: 32px 15px 0 15px;
+
+        .welcome-text-block {
+            justify-content: flex-start;
+            width: 100%; 
+        }
+    }
+}
+
+@media screen and (max-width: 590px) {
+    
+    .main-bar__container {
+        .logo-block,
+        .logo-block svg  {
+            width: 54px;
+            height: 54px;
+        }
+
+        .catalog-button,
+        .favourites-button,
+        .hunter-button,
+        .chest-button {
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+
+            > svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+    }
+
+    .telegram-button,
+    .whatsapp-button {
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+
+            > svg {
+                width: 20px;
+                height: 20px;
+            }
+    }
+
+    .grid-block {
+        grid-template-columns: 48px 48px 54% 48px 48px;
+    }   
+
+    .welcome-section-block__container {
+
+        .welcome-text-block {
+            h1 {
+                br:nth-child(1){
+                    display: unset;
+                }
+            }
+        }
+
+        > img {
+            bottom: -16vw;
+            right: -35vw;
+            width: 80%;
+        }
+    } 
+}
+
+@media screen and (max-width: 500px) {
+    
+    .grid-block {
+        grid-template-columns: 48px 48px 50% 48px 48px;
+    }   
+
+    .burger-menu__container {
+        width: 100%;
+        height: 100%;
+        max-width: unset;
+        border-radius: 0px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    
+    .grid-block {
+        grid-template-columns: 48px 48px 37% 48px 48px;
+    } 
+
+    .burger-menu__container {
+        .menu-block .working-hours {
+            gap: 6px;
+        }
+    }
+
+    .welcome-text-block {
+        h1 {
+            font-size: 1.25rem;
+        }
+    }
+}

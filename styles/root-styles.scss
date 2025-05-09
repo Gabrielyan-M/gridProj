@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Maza';
+    src: url('../fonst/Maza.woff2') format('woff2'),
+        url('../fonst/Maza.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tenor Sans';
+    src: url('../fonst/TenorSans.woff2') format('woff2'),
+        url('../fonst/TenorSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+$font-family-Maza: 'Maza';
+$font-family-TenorSans: 'Tenor Sans';
+$text-color__main: #343A3F;
+
+$background-color__cream: #F4F4F4;
+$background-color__dark-cream: #D4D9DD;
+
+
+$blue-color: #4888FF;
+$blue-color_20: rgba(72, 136, 255, 0.2);
+$blue-color--active: #3b70d3;
+
+
+@mixin button-colors ($background-color, $text-color) {
+    background-color: $background-color;
+    color: $text-color;
+}
+
+@mixin display-flex-settings ($display, $flex-direction, $justify-content, $align-items ) {
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}

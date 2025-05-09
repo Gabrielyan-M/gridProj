@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Maza";
+  src: url("../fonst/Maza.woff2") format("woff2"), url("../fonst/Maza.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Tenor Sans";
+  src: url("../fonst/TenorSans.woff2") format("woff2"), url("../fonst/TenorSans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeSpeed;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul, ol, li {
+  font-family: "Maza";
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration-line: none;
+  color: #343A3F;
+}
+
+button {
+  border: unset;
+  border-radius: unset;
+  background-color: unset;
+  padding: 0px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}

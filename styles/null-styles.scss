@@ -1,0 +1,42 @@
+@import "./root-styles.scss";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-rendering: optimizeSpeed;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul, ol, li {
+    font-family: $font-family;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration-line: none;
+    color: $text-color__main;
+}
+
+button {
+    border: unset;
+    border-radius: unset;
+    background-color: unset;
+    padding: 0px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
